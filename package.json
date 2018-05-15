@@ -1,0 +1,30 @@
+{
+  "name": "stubborn-queue",
+  "version": "0.0.0",
+  "description": "a queue that continues even if a task fails",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/stubborn-queue.git"
+  },
+  "keywords": [
+    "queue"
+  ],
+  "author": "sethvincent <sethvincent@gmail.com> (https://sethvincent.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethvincent/stubborn-queue/issues"
+  },
+  "homepage": "https://github.com/sethvincent/stubborn-queue#readme",
+  "devDependencies": {
+    "documentation": "^6.3.2",
+    "standard": "^11.0.1",
+    "tape": "^4.9.0"
+  },
+  "dependencies": {
+    "assert-argument": "^1.0.2"
+  }
+}
