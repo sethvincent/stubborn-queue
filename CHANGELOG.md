@@ -7,3 +7,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## Unreleased
 
 * ???
+
+v2.0.0 - 2018-11-05
+
+### Changed
+
+- Does not pass `null` to results if there is an error

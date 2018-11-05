@@ -50,11 +50,10 @@ Queue.prototype._next = function Queue_next () {
   function callback (err, result) {
     if (err) {
       self._errors.push(err)
+    } else {
+      self._results.push(result)
     }
 
-    // result will be null if there's an error
-    // pushing a null result keeps the index accurate
-    self._results.push(result)
     --self._tasksRunning
     self._next()
   }

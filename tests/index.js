@@ -36,11 +36,8 @@ test('collects multiple errors', function(t) {
     t.ok(results)
     t.deepEqual(results, [
       { active: 1, index: 0 },
-      { active: 1, index: 0 },
-      { active: 1, index: 1 },
       { active: 1, index: 1 },
       { active: 1, index: 2 },
-      { active: 1, index: 2 }
     ])
     t.end()
   }
@@ -64,11 +61,8 @@ test('collects multiple errors with concurrency', function(t) {
     t.ok(results)
     t.deepEqual(results, [
       { active: 2, index: 0 },
-      { active: 2, index: 0 },
-      { active: 2, index: 1 },
       { active: 2, index: 1 },
       { active: 1, index: 2 },
-      { active: 1, index: 2 }
     ])
     t.end()
   }
